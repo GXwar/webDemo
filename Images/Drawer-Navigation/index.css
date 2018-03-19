@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    width:300px;
+    margin:20px auto;
+}
+
+ul {
+    list-style-type: None;
+}
+
+a {
+    font-size:16px;
+    text-decoration:None;
+    color:#666;
+}
+
+#list li {
+    line-height:40px;
+    height:40px;
+    background:#efefef;
+    text-indent:1em;
+    margin-bottom:3px;
+    overflow:hidden;
+    -webkit-transition:height 0.3s ease;
+    -moz-transition:height 0.3s ease;
+    -ms-transition:height 0.3s ease;
+    -o-transition:height 0.3s ease;
+    transition:height 0.3s ease;
+}
+
+#list li img{
+    width:300px;
+    height:200px;
+}
+
+/* set the initialize status */
+#list li:nth-child(1){
+    height:240px;
+    background:#F36;
+}
+
+#list li:nth-child(1) a{
+    color:#fff;
+}
+
+#list:hover li{
+    height:40px;
+    background:#efefef;
+}
+
+#list:hover li a{
+    color:#666;
+}
+
+/* set the li on which pointer is hovered to the open drawer */
+#list li:hover{
+    height:240px;
+    background:#F36;
+}
+
+#list li:hover a{
+    color:#fff;
+}

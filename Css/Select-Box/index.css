@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#box{
+    width: 300px;
+    border: 1px solid #000;
+    margin: 20px auto;
+}
+
+#tab{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    background: #333;
+}
+
+#tab li{
+    float: left;
+    list-style: none;
+    height: 30px;
+    line-height: 30px;
+}
+
+#tab li a{
+    text-decoration: none;
+    padding: 0 25px;
+    color: #fff;
+}
+
+#tab li.sec{
+    background: #ddd;
+}
+
+#tab li.sec a{
+    color: #333;
+}
+
+#text{
+    width: 100%;
+    height: 200px;
+    background: #f2f2f2;
+    text-align: center;
+}
+
+#text>div{
+    display: None;
+    line-height: 150px;
+}
+#text>div.cur{
+    display: block;
+}

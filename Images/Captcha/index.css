@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* set the width of the block element to prevent it bigger than the container,
+   then set the left and right margin as auto to make it center */
+.wrap {
+    width: 500px;
+    margin: 20px auto;
+    /*border: 1px soli/d black;*/
+}
+
+#text {
+    height: 30px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    text-indent: 1em;
+}
+
+#code{
+    /* make the element has both the properties of block element(can set width and height) and inline element(don't force a line break */
+    display: inline-block;
+    width: 80px; height: 30px;
+    background: #aaa;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 7px;
+    padding-left: 7px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+#btn{
+    width: 60px; height: 30px;
+    /* An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out". */
+    outline: 0;
+    border: #153021;
+    background: #499990;
+    color: #fff;
+    border-radius: 5px;
+}
