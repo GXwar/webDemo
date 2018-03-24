@@ -1,8 +1,13 @@
-function setCookie(name,value,days=30)
-{
-  let exp = new Date();
-  exp.setTime(exp.getTime() + days*24*60*60*1000);
-  document.cookie = name + "=" + escape(value) + ";expires=" + exp.toUTCString();
+function show(name,age){
+  this.name=name;
+  this.age=age;
 }
+show.prototype.say=function(){
 
-setCookie('userName', 'qw')
+  console.log("my name is:"+this.name);
+
+}
+var p=new show("acorn",23);
+var p1=Object.create(p)
+console.log({}.__proto__)
+console.log(Object.prototype);
