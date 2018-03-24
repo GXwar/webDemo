@@ -35,13 +35,13 @@ body {
     cursor: pointer;
 }
 
-#menu ul li:nth-child(1){ background: url( images/ico1.jpg ) no-repeat 5px center; }
-#menu ul li:nth-child(2){ background: url( images/ico2.jpg ) no-repeat 5px center; }
-#menu ul li:nth-child(3){ background: url( images/ico3.jpg ) no-repeat 5px center; }
-#menu ul li:nth-child(4){ background: url( images/ico4.jpg ) no-repeat 5px center; }
-#menu ul li:nth-child(5){ background: url( images/ico5.jpg ) no-repeat 5px center; }
-#menu ul li:nth-child(6){ background: url( images/ico6.jpg ) no-repeat 5px center; }
-#menu ul li:nth-child(7){ background: url( images/ico7.jpg ) no-repeat 5px center; }
+#menu ul li:nth-child(1){ background: url( ./images/ico1.jpg ) no-repeat 5px center; }
+#menu ul li:nth-child(2){ background: url( ./images/ico2.jpg ) no-repeat 5px center; }
+#menu ul li:nth-child(3){ background: url( ./images/ico3.jpg ) no-repeat 5px center; }
+#menu ul li:nth-child(4){ background: url( ./images/ico4.jpg ) no-repeat 5px center; }
+#menu ul li:nth-child(5){ background: url( ./images/ico5.jpg ) no-repeat 5px center; }
+#menu ul li:nth-child(6){ background: url( ./images/ico6.jpg ) no-repeat 5px center; }
+#menu ul li:nth-child(7){ background: url( ./images/ico7.jpg ) no-repeat 5px center; }
 
 #list{
     position: relative;
