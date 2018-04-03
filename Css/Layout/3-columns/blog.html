@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GXwar's Blog</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <link rel="shortcut icon" href="../images/react.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+            font-size: 15px;
+            color: #34495e;
+        }
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            box-shadow: 0 0 4px rgba(0,0,0,.25);
+        }
+        nav {
+            width: 850px;
+            margin: 0 auto;
+            height: 40px;
+            padding: 25px 0;
+        }
+        main {
+            max-width: 850px;
+            box-sizing: border-box;
+            margin: 90px auto 0;
+            padding: 0 14px;
+        }
+        .post-list {
+            padding: 10px 0 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        footer {
+            color: #7f8c8d;
+            padding: 0 20px 30px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        body a {
+            text-decoration: none;
+            color: #42b983;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .layout {
+            display: flex;
+        }
+
+        /*header*/
+        .brand {
+            font-size: 22px;
+            color: #2c3e50;
+            font-family: Dosis,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+            font-weight: 500;
+        }
+        .nav-link-container {
+            float: right;
+            list-style-type: none;
+        }
+        .nav-link-item {
+            display: inline-block;
+            margin: 10px;
+        }
+        .nav-link {
+            height: 40px;
+            line-height: 40px;
+            color: #34495e;
+            padding-bottom: 3px;
+        }
+        .nav-link.active {
+            border-bottom: 3px solid #42b983;
+        }
+        .nav-link:hover {
+            border-bottom: 3px solid #42b983;
+        }
+    </style>
+</head>
+<body>
+    <header class="layout">
+        <nav>
+            <a href="#">
+                <img src="../images/react.png">
+                <span class="brand">GXwar</span>
+            </a>
+            <ul class="nav-link-container">
+                <li class="nav-link-item">
+                    <a class="nav-link active">文章</a>
+                </li>
+                <li class="nav-link-item">
+                    <a class="nav-link">标签</a>
+                </li>
+                <li class="nav-link-item">
+                    <a class="nav-link">Leetcode</a>
+                </li>
+                <li class="nav-link-item">
+                    <a class="nav-link">关于我</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="post-list">
+            <article>
+                异常处理其实是一个程序非常重要的部分，我自己以前写前端代码的时候很不注意这个，用node来写后台并被焦作人很多次了之后才真正明白了它的重要性。因为用node来写后台时，常常涉及到大量的网络异步请求、用户提交、数据库读写等操作。许多场景你即使做了充足的数据校验和多种情况考虑，但因为是基于网络和用户的，必然存在你无法掌控的情况，如果你没有做好try catch，那么一个bug就可能让你的node server倒下。虽然借助于pm2等等工具，你可以让他倒了再立马爬起来，但是倒下的代价是巨大的，而且如果没有try catch，没有日志记录的话，你甚至都不知道倒在哪了。所以错误处理对于提升程序的健壮性来说是必不可少的。
+            </article>
+        </div>
+    </main>
+    <footer>
+        &copy;2018 xx搭建
+    </footer>
+</body>
+</html>

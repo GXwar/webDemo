@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>float+negative margin</title>
+    <style>
+        .main-wrap {
+            float: left;
+            width: 100%;
+        }
+        .sub {
+            float: left;
+            width: 190px;
+            margin-left: -100%;
+            background-color: yellow;
+        }
+        .extra {
+            float: left;
+            width: 230px;
+            margin-left: -230px;
+            background-color: yellowgreen;
+        }
+        .main {
+            margin: 0 230px 0 190px;
+            background-color: deepskyblue;
+        }
+    </style>
+</head>
+<body>
+<div class="main-wrap">
+    <div class="main">#main</div>
+</div>
+<div class="sub">sub</div>
+<div class="extra">extra</div>
+</body>
+</html>

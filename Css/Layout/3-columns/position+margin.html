@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>position+margin</title>
+    <style>
+        .sub, .extra {
+            position: absolute;
+            top: 0;
+            width: 200px;
+        }
+        .sub {
+            left: 0;
+        }
+        .extra {
+            right: 0;
+        }
+        .main {
+            margin: 0 200px;
+        }
+    </style>
+</head>
+<body>
+<div id="content">
+    <div class="sub">sub</div>
+    <div class="extra">extra</div>
+    <div class="main">main</div>
+</div>
+</body>
+</html>
