@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CLOCK</title>
+    <style id="css">
+        #box {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000000;
+            position: relative;
+            border-radius: 50%;
+            margin: 100px auto;
+        }
+        #list {
+            height: 100px;
+            position: relative;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        #list li {
+            width: 1px;
+            height: 6px;
+            background: black;
+            position: absolute;
+            left: 99px;
+            top: 0;
+            transform-origin: center 100px;
+        }
+        #list li:nth-child(5n+1) {
+            width: 2px;
+            height: 10px;
+        }
+        #hour, #min, #sec, #ico {
+            position: absolute;
+            background-color: #000000;
+            transform-origin: bottom;
+        }
+        #hour {
+            width: 4px;
+            height: 50px;
+            left: 98px;
+            top: 50px;
+        }
+        #min {
+            width: 2px;
+            height: 70px;
+            left: 99px;
+            top: 30px;
+            background: #300;
+        }
+        #sec {
+            width: 2px;
+            height: 90px;
+            left: 99px;
+            top: 10px;
+            background: red;
+        }
+        #ico {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            left: 95px;
+            top: 95px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <ul id="list"></ul>
+        <div id="hour"></div>
+        <div id="min"></div>
+        <div id="sec"></div>
+        <div id="ico"></div>
+    </div>
+    <script>
+        let hour = document.getElementById('hour');
+        let min = document.getElementById('min');
+        let sec = document.getElementById('sec');
+        let list = document.getElementById('list');
+        let css = document.getElementById('css');
+
+        let res = '';
+        for (let i=0; i<60; i++) {
+          res += '<li></li>';
+          css.innerHTML += `#list li:nth-child(${i+1}) { transform: rotate(${i*6}deg); }`;
+        }
+        list.innerHTML = res;
+
+        toTime();
+        setInterval(toTime, 1000);
+
+        function toTime() {
+          let date = new Date();
+          let s = date.getSeconds();
+          let m = date.getMinutes() + s/60;
+          let h = date.getHours() + m/60;
+
+          hour.style.transform = `rotate(${h*30}deg)`;
+          min.style.transform = `rotate(${m*6}deg)`;
+          sec.style.transform = `rotate(${s*6}deg)`;
+        }
+    </script>
+</body>
+</html>
