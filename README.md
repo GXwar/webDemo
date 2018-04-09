@@ -2,7 +2,7 @@
 
 ## CSS+JS
 > Use CSS and raw JS to implement some little and interesting demo
-1. [Clock]()
+1. [Clock](https://cdn.rawgit.com/GXwar/webDemo/40a831e1/CSS%2BJS/clock.html)
 
 ## Others
 1. [JS Drag-Drop Plugin](http://htmlpreview.github.io/?https://github.com/GXwar/webDemo/blob/master/Others/JS-Drag-Drop-Plugin/index.html)
