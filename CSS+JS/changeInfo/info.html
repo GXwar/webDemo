@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hover to Show Info</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-size: 14px;
+        }
+        ul {
+            list-style: none;
+        }
+        #container {
+            width: 1000px;
+            margin: 150px auto;
+        }
+        #header {
+            border-bottom: 3px solid #F60;
+            height: 30px;
+        }
+        #header li {
+            font-weight: bolder;
+            float: left;
+            height: 30px;
+            width: 80px;
+            text-align: center;
+            line-height: 30px;
+        }
+        #header li:hover {
+            cursor: pointer;
+        }
+        #header .active {
+            background: #f60;
+            color: #fff;
+        }
+        #listContent li {
+            font-size: 16px;
+            height: 30px;
+            line-height: 30px;
+        }
+        #tips {
+            padding: 5px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 400px;
+            border: 2px solid #F70;
+            background: white;
+            display: none;
+        }
+        #tips li{list-style:none;font-size:16px;height:30px;line-height:30px;}
+        #tips li.col{width:180px;height: 30px; float: left;line-height: 30px; border-bottom: 1px solid #CCC;}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <ul id="header"></ul>
+        <div id="listContent"></div>
+    </div>
+    <div id="tips">
+        <div id="arrow"></div>
+        <div id="tipsContent"></div>
+    </div>
+    <script src="data.js"></script>
+    <script>
+        window.onload = function () {
+          let container = document.getElementById('container');
+          let header = document.getElementById('header');
+          let listContent = document.getElementById('listContent');
+          let tips = document.getElementById('tips');
+          let tipsContent = document.getElementById('tipsContent');
+
+          for (let i=0; i<data.length; i++) {
+            header.innerHTML += `<li>${data[i].name}</li>`;
+          }
+          let lis = document.getElementsByTagName("li");
+          lis[0].className = 'active';
+
+          for (let i=0; i<lis.length; i++) {
+            lis[i].index = i;
+            lis[i].onclick=function(){
+              for(var j=0;j<lis.length;j++){
+                lis[j].className="";
+                listContent.innerHTML="";
+                tipsContent.innerHTML="";
+              }
+              this.className="active";
+              fun(data[this.index]);
+            }
+          }
+          
+          fun(data[0]);
+          function fun(da) {
+            for (let i=0; i<da.list.length; i++) {
+              let ul = document.createElement('ul');
+              let li = document.createElement('li');
+              let a = document.createElement('a');
+              a.innerHTML = da.list[i].title;
+              a.href='javascript:';
+              li.appendChild(a);
+              ul.appendChild(li);
+              listContent.appendChild(ul);
+              a.index = i;
+
+              a.addEventListener('mouseover', function () {
+                let h4 = document.createElement('h4');
+                let lis1 = document.createElement('li');
+                lis1.className = 'col';
+                let lis2 = document.createElement('li');
+                lis2.className = 'col';
+                let lis3 = document.createElement('li');
+                lis3.className = 'col';
+                let lis4 = document.createElement('li');
+                lis4.className = 'col';
+                let lis5 = document.createElement('li');
+                lis5.className = 'col';
+                let lis6 = document.createElement('li');
+                lis6.className = 'col';
+                tips.style.display = 'block';
+                tips.style.left = container.offsetLeft + this.offsetWidth + 10 + 'px';
+                tips.style.top = this.offsetTop + this.scrollTop + 'px';
+                h4.innerHTML = da.list[this.index].company;
+                lis1.innerHTML = da.list[this.index].recruitingNumbers;
+                lis2.innerHTML = da.list[this.index].workingLocation;
+                lis3.innerHTML = da.list[this.index].workExperience;
+                lis4.innerHTML = da.list[this.index].education;
+                lis5.innerHTML = da.list[this.index].wage;
+                lis6.innerHTML = da.list[this.index].addDate;
+                tipsContent.appendChild(h4);
+                tipsContent.appendChild(lis1);
+                tipsContent.appendChild(lis2);
+                tipsContent.appendChild(lis3);
+                tipsContent.appendChild(lis4);
+                tipsContent.appendChild(lis5);
+                tipsContent.appendChild(lis6);
+              });
+
+              a.onmouseout = function () {
+                tips.style.display = 'none';
+              }
+            }
+          }
+        };
+    </script>
+</body>
+</html>
