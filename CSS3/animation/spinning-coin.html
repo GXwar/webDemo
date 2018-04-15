@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spinning Coin</title>
+    <style>
+        #coin {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #00d6b2;
+            margin: 100px auto;
+            animation: spinning 2s linear 0.4s infinite;
+        }
+        @keyframes spinning {
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="coin"></div>
+</body>
+</html>
