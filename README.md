@@ -7,7 +7,8 @@
 
 ## CSS3
 > Use to record some css3 features and demo implemented by css3
-1. [Animation](https://github.com/GXwar/webDemo/tree/master/CSS3/animation) - the demo of CSS3's animation
+1. [Animation](https://github.com/GXwar/webDemo/tree/master/CSS3/animation) - the demos of CSS3's animation
+2. [Button](https://github.com/GXwar/webDemo/tree/master/CSS3/buttons) - the demos of Button Effect
 
 ## Others
 1. [JS Drag-Drop Plugin](http://htmlpreview.github.io/?https://github.com/GXwar/webDemo/blob/master/Others/JS-Drag-Drop-Plugin/index.html)
