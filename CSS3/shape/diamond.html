@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diamond</title>
+    <style>
+        #diamond {
+            width: 250px;
+            height: 250px;
+            transform: rotate(45deg);
+            overflow: hidden;
+            margin: 100px;
+        }
+        #diamond > img {
+            max-width: 100%;
+            transform: rotate(-45deg) scale(1.42);
+        }
+        img {
+            max-width: 250px;
+            clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+            transition: 1s;
+        }
+        img:hover {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+    </style>
+</head>
+<body>
+    <div id="diamond">
+        <img src="http://csssecrets.io/images/adamcatlace.jpg"/>
+    </div>
+    <img src="http://csssecrets.io/images/adam-sleeping.jpg" />
+</body>
+</html>

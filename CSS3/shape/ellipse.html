@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Ellipse</title>
     <style>
-        div {
+        #ellipse {
             background: #fb3;
             width: 16rem;
             height: 10rem;
@@ -13,9 +13,36 @@
             border-radius: 50%;
             background-clip: content-box;
         }
+
+        #half-ellipse {
+            margin: 20px;
+            background: #fb3;
+            width: 140px;
+            height: 50px;
+            border-radius: 50% / 100% 100% 0 0;
+        }
+
+        #half-ellipse2 {
+            margin: 20px;
+            background: #fb3;
+            width: 70px;
+            height: 100px;
+            border-radius: 100% 0 0 100% / 50%;
+        }
+
+        #quarter-ellipse {
+            margin: 20px;
+            background: #fb3;
+            width: 70px;
+            height: 50px;
+            border-radius: 100% 0 0 0;
+        }
     </style>
 </head>
 <body>
-    <div></div>
+    <div id="ellipse"></div>
+    <div id="half-ellipse"></div>
+    <div id="half-ellipse2"></div>
+    <div id="quarter-ellipse"></div>
 </body>
 </html>

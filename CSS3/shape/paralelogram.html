@@ -1,0 +1,61 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>Paralellogram</title>-->
+    <!--<style>-->
+        <!--#paralelogram {-->
+            <!--display: inline-block;-->
+            <!--padding: .5em 1em;-->
+            <!--border: 0; margin: .5em;-->
+            <!--background: #58a;-->
+            <!--color: white;-->
+            <!--font: bold 200%/1 sans-serif;-->
+
+            <!--transform: skew(-45deg);-->
+        <!--}-->
+        <!--#paralelogram > div {-->
+            <!--transform: skew(45deg);-->
+        <!--}-->
+    <!--</style>-->
+<!--</head>-->
+<!--<body>-->
+    <!--<div id="paralelogram">-->
+        <!--<div>-->
+            <!--Click Me-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paralellogram</title>
+    <style>
+        .button {
+            display: inline-block;
+            padding: .5em 1em;
+            border: 0; margin: .5em;
+            background: transparent;
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            font: bold 200%/1 sans-serif;
+
+            position: relative;
+        }
+        .button::before {
+            content: '';
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            z-index: -1;
+            background: #58a;
+            transform: skew(45deg);
+        }
+    </style>
+</head>
+<body>
+<button class="button">Click me</button>
+</body>
+</html>

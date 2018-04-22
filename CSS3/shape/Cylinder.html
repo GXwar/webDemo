@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cylinder</title>
+    <style>
+        .cylinder {
+            position: relative;
+        }
+        .cylinder > #he {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 1px solid black;
+            background: #fb3;
+            width: 140px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .cylinder > #bo {
+            position: absolute;
+            top: 50px;
+            left: 0;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            width: 140px;
+            height: 200px;
+            background: #fb3;
+            z-index: -1;
+        }
+        .cylinder > #fo {
+            position: absolute;
+            top: 200px;
+            left: 0;
+            width: 140px;
+            height: 50px;
+            border-radius: 70px 70px 0 0 / 50px;
+            border: 1px solid black;
+            background: #fb3;
+        }
+    </style>
+</head>
+<body>
+    <div class="cylinder">
+        <div id="he"></div>
+        <div id="bo"></div>
+        <div id="fo"></div>
+    </div>
+</body>
+</html>
