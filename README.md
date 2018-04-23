@@ -10,7 +10,10 @@
 1. [Animation](https://github.com/GXwar/webDemo/tree/master/CSS3/animation) - the demos of CSS3's animation
 2. [Background & Border](https://github.com/GXwar/webDemo/tree/master/CSS3/background%26border) - the demos of Background and Border
 3. [Button](https://github.com/GXwar/webDemo/tree/master/CSS3/buttons) - the demos of Button Effect
-4. [Shape](https://github.com/GXwar/webDemo/tree/master/CSS3/shape) - the demos of Several Shapes
+4. [Layout]() - the demos of Layout
+5. [Visual Effect]() - the demos of Visual Effect
+6. [Shape](https://github.com/GXwar/webDemo/tree/master/CSS3/shape) - the demos of Several Shapes
+
 
 ## Others
 1. [JS Drag-Drop Plugin](http://htmlpreview.github.io/?https://github.com/GXwar/webDemo/blob/master/Others/JS-Drag-Drop-Plugin/index.html)
