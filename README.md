@@ -12,7 +12,7 @@
 3. [Button](https://github.com/GXwar/webDemo/tree/master/CSS3/buttons) - the demos of Button Effect
 4. [Layout](https://github.com/GXwar/webDemo/tree/master/CSS3/Layout) - the demos of Layout
 5. [Visual Effect](https://github.com/GXwar/webDemo/tree/master/CSS3/Visual%20Effect) - the demos of Visual Effect
-6. [Shape](https://github.com/GXwar/webDemo/tree/master/CSS3/shape) - the demos of Several Shapes
+6. [Shape](https://github.com/GXwar/webDemo/tree/master/CSS3/shape) - the demos of Several Shape
 
 
 ## Others
