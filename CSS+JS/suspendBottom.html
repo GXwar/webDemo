@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Suspended in Bottom By Scroll</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    .body {
+      height: 1000px;
+      background-color: greenyellow;
+    }
+    .control {
+      height: 50px;
+      width: 1440px;
+      background-color: red;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+    }
+    .footer {
+      height: 100px;
+      background-color: gray;
+    }
+  </style>
+</head>
+<body>
+  <div class="body"></div>
+  <div class="control"></div>
+  <div class="footer"></div>
+  </div>
+  <script>
+    window.onload = function () {
+      let body = document.getElementsByClassName('body')[0];
+      let control = document.getElementsByClassName('control')[0];
+
+      // Add Listener Event to Scroll
+      window.onscroll = function () {
+        // distance from scroll to the top of viewport
+        let scrollT = document.documentElement.scrollTop;
+        // body.offsetHeight is the height of the body element
+        // window.innerHeight is the height of window(viewport)
+        // body element's height in viewport = body.offsetHeight - scrollT
+        // tmp is the distance from the bottom of body element to the bottom of viewport
+        let tmp = window.innerHeight - (body.offsetHeight - scrollT);
+        // if tmp is equal or bigger than the height of control, set it to static;
+        // else set it as fixed
+        if (tmp >= 50) {
+          control.style.position = 'static';
+        } else {
+          control.style.position = 'fixed';
+        }
+      }
+    }
+  </script>
+</body>
+</html>
