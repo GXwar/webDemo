@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Floating Cover</title>
+  <style>
+    .content {
+      position: relative;
+      height: 150px;
+      width: 150px;
+      background-image: url('../../assets/img1.jpg');
+    }
+    .content:hover::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,.3);
+    }
+    .content:hover::after {
+       content: "下载中";
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+       letter-spacing: 10px;
+       color: #fff;
+       font-size: 14px;
+       line-height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+
+  </div>
+</body>
+</html>
