@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BgColor-Transform</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to right bottom, dimgray, black);
+    }
+    ul {
+      padding: 0;
+    }
+    li {
+      list-style-type: none;
+    }
+    li span {
+      color: white;
+      font-size: 50px;
+      font-family: monospace;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    li span {
+      position: relative;
+      transition: 500ms;
+    }
+    li:hover span {
+      color: #333;
+    }
+    li span::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 0;
+      z-index: -1;
+      transition: 500ms;
+      background: white;
+    }
+    li:hover span::before {
+      width: 70%;
+      transform: rotate(-25deg);
+      background: white;
+    }
+    li:hover span {
+      transition-delay: calc(80ms * var(--n) + 10ms);
+    }
+
+    li:hover span::before {
+      transition-delay: calc(80ms * var(--n));
+    }
+
+    li span:nth-child(1) {
+      --n: 1;
+    }
+
+    li span:nth-child(2) {
+      --n: 2;
+    }
+
+    li span:nth-child(3) {
+      --n: 3;
+    }
+
+    li span:nth-child(4) {
+      --n: 4;
+    }
+
+    li span:nth-child(5) {
+      --n: 5;
+    }
+
+    li span:nth-child(6) {
+      --n: 6;
+    }
+
+    li span:nth-child(7) {
+      --n: 7;
+    }
+
+    li span:nth-child(8) {
+      --n: 8;
+    }
+    li {
+      padding-left: 2em;
+      border: 2px solid transparent;
+      border-left-color: silver;
+      transition: 500ms;
+    }
+
+    li:hover {
+      border-left-color: white;
+    }
+    li {
+      text-align: center;
+      margin: 1em 0;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>
+        <span>h</span>
+        <span>o</span>
+        <span>m</span>
+        <span>e</span>
+      </li>
+      <li>
+        <span>p</span>
+        <span>r</span>
+        <span>o</span>
+        <span>d</span>
+        <span>u</span>
+        <span>c</span>
+        <span>t</span>
+        <span>s</span>
+      </li>
+      <li>
+        <span>s</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+      </li>
+      <li>
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+      </li>
+  </ul>
+  </nav>
+</body>
+</html>
