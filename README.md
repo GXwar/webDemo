@@ -32,5 +32,6 @@
 3. [JS Context Menu](https://cdn.rawgit.com/GXwar/webDemo/f0dd4249/Others/ContextMenu/index.html)
 
 ## Effects
-* [CSS导航栏下划线跟随效果]()
+* [CSS导航栏下划线跟随效果](https://gxwar.github.io/webDemo/Effects/CSS%E5%AF%BC%E8%88%AA%E6%A0%8F%E8%B7%9F%E9%9A%8F%E6%95%88%E6%9E%9C.html)
+* [CSS动画实现动态气泡背景]()
 
