@@ -16,7 +16,13 @@
 * [select](http://htmlpreview.github.io/?https://github.com/GXwar/webDemo/blob/master/CSS3/Components/select.html) - 用纯css实现下拉选择菜单
 
 5. [Layout](https://github.com/GXwar/webDemo/tree/master/CSS3/Layout) - the demos of Layout
-6. [Visual Effect](https://github.com/GXwar/webDemo/tree/master/CSS3/Visual%20Effect) - the demos of Visual Effect
+
+### Visual Effects - the demos of Visual Effect
+* [Frosted-Glass] - 毛玻璃效果
+* [Shadow-One-Side] - 单边的box-shadow
+* [BgColor-Transform] - 背景色块变换按钮特效
+
+
 7. [Shape](https://github.com/GXwar/webDemo/tree/master/CSS3/shape) - the demos of Several Shape
 
 
@@ -24,4 +30,8 @@
 1. [JS Drag-Drop Plugin](http://htmlpreview.github.io/?https://github.com/GXwar/webDemo/blob/master/Others/JS-Drag-Drop-Plugin/index.html)
 2. JS Cookie CRUD
 3. [JS Context Menu](https://cdn.rawgit.com/GXwar/webDemo/f0dd4249/Others/ContextMenu/index.html)
+
+## Effects
+* [CSS导航栏下划线跟随效果](https://gxwar.github.io/webDemo/Effects/CSS%E5%AF%BC%E8%88%AA%E6%A0%8F%E8%B7%9F%E9%9A%8F%E6%95%88%E6%9E%9C.html)
+* [CSS动画实现动态气泡背景]()
 
